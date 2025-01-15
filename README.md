@@ -1,4 +1,56 @@
-# Getting Started with Create React App
+# TravelPlanner
+
+TravelPlanner is a React web application designed to help users plan and organize their trips. Users can explore destinations, filter them based on meal preferences, view travel details, and create customized itineraries.
+
+## Features
+
+- **Destination Search**: Search for travel destinations with detailed information.
+- **Custom Itinerary Creation**: Create personalized itineraries by adding destinations, activities, and accommodations.
+- **Meal Preferences Filter**: Filter destinations based on specific meal preferences like vegetarian, vegan, or gluten-free.
+- **Real-time Updates**: Get up-to-date information on destinations, including weather and best travel times.
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload if you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in interactive watch mode.\
+For more information on running tests, check the [Create React App test documentation](https://facebook.github.io/create-react-app/docs/running-tests).
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for best performance.
+
+The build is minified, and the filenames include the hashes.\
+Your app is ready to be deployed!\
+For more details, check the [deployment guide](https://facebook.github.io/create-react-app/docs/deployment).
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you eject, you can't go back!**
+
+If you want more control over the build tool and configuration, you can eject. This will remove the single build dependency and copy all configuration files into the project, giving you full control over them. After ejecting, you will need to manage configurations like webpack and Babel yourself.
+
+You don't have to eject unless you're ready to customize the build setup.
+
+## Installation
+
+To get started with the TravelPlanner app on your local machine:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/khanyajara/TravelPlanner.git
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
