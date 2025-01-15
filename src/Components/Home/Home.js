@@ -4,6 +4,7 @@ import NavBar from '../Navbar';
 import './home.css';
 import Map from '../map/map';
 import WeatherCard from '../Weather/weatherCard';
+import { useNavigate } from 'react-router-dom';
 import Forecast from '../Weather/Forecast';
 import HeroSection from '../../hero-section/Hero';
 import PlacesList from '../map/Atraction'
@@ -21,7 +22,7 @@ function App() {
   const ref = useRef(null);
 
   
-  
+  const navigate = useNavigate();
 
  
   useEffect(() => {
@@ -57,20 +58,31 @@ function App() {
     fetchWeather();
   }, [coordinates]);
 
+  const ExploreMap=()=>{
+    navigate('/places')
+
+  }
+  
+
+
   return (
     <div className="App">
       
       <HeroSection title="Welcome to ClimeQuest" subtitle="Discover and plan your perfect trips by choosing destinations with the ideal weather conditions, ensuring an unforgettable travel experience every time.”" />
-         
+         <div className='button-container'>
+          <button className="Explore-button" onClick={ExploreMap}>Let's Explore</button>
+         </div>
        
       <div className='Container-for-Map'>
           
           <div className="map-container">
           
-            <PlacesList/>
+            
           </div>
       </div>
+      
 
+      <CityAttractions/>
      
      
 

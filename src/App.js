@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import axios from 'axios';
+import Places from './Components/map/Atraction'
 import Home from './Components/Home/Home'
 import UserProfile from './Components/Auth/Profile';
 import Login from './Components/Auth/Login';
@@ -72,6 +73,7 @@ function App() {
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/register" element={<Register />} />
           <Route path="/reset-password" element={<ResetPassword />} />
+          <Route path="/places" element={<Places />} />
           
         </Routes>
 

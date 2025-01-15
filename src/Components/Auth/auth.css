@@ -56,3 +56,303 @@ border-radius: 13px;
     border: 2px solid white;
     
 }
+
+* {
+    
+  }
+  
+  .LoginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    border-radius: 13px;
+    border: 3px solid black;
+    width: 700px;
+    margin-left: 600px;
+    height: 50vh;
+    background-color: rgba(150, 8, 79, 0.295);
+    padding: 20px;
+  }
+  
+  .LoginForm h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .email-input,
+  .password-input {
+    padding: 5px;
+    width: 100%;
+  }
+  
+  .email-input label,
+  .password-input label {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .input-container {
+    padding: 5px;
+    width: 400px;
+  }
+  
+  .Input {
+    width: 100%;
+    height: 5vh;
+    border: none;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.466);
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .Input:hover {
+    background-color: rgba(66, 16, 16, 0.589);
+    border: 2px solid white;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(68, 0, 255, 0.747);
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgba(68, 0, 255, 1);
+  }
+  
+  button:disabled {
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: not-allowed;
+  }
+  
+  button[type="button"] {
+    background-color: rgba(150, 8, 79, 0.6);
+  }
+  
+  button[type="button"]:hover {
+    background-color: rgba(150, 8, 79, 1);
+  }
+  
+  .Account-link {
+    text-decoration: none;
+    color: rgba(68, 0, 255, 0.747);
+  }
+  
+  .Account-link:hover {
+    color: blue;
+    cursor: pointer;
+  }
+  
+  .message,
+  .error {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .message {
+    background-color: skyblue;
+    color: white;
+  }
+  
+  .error {
+    background-color: rgba(255, 0, 0, 0.7);
+    color: white;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .UserProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: rgba(150, 8, 79, 0.295);
+    border-radius: 13px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .UserProfile h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .UserProfile p {
+    font-size: 16px;
+    color: white;
+    margin: 5px 0;
+  }
+  
+  .UserProfile h3 {
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  .UserProfile ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .UserProfile ul li {
+    background-color: rgba(0, 0, 0, 0.466);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+  }
+  
+  .UserProfile ul li h4 {
+    color: white;
+    font-size: 18px;
+  }
+  
+  .UserProfile ul li p {
+    color: white;
+  }
+  
+  .UserProfile ul li img {
+    width: 200px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  .UserProfile button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(68, 0, 255, 0.747);
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .UserProfile button:hover {
+    background-color: rgba(68, 0, 255, 1);
+  }
+  
+  .UserProfile .error-message {
+    color: red;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .ForgotForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    border-radius: 13px;
+    border: 3px solid black;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: rgba(150, 8, 79, 0.295);
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .ForgotForm.show {
+    opacity: 1;
+  }
+  
+  .ForgotForm h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .ForgotForm .email-input {
+    margin-bottom: 20px;
+  }
+  
+  .ForgotForm .email-input label {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 5px;
+  }
+  
+  .ForgotForm .email-input input {
+    width: 100%;
+    height: 5vh;
+    border: none;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.466);
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .ForgotForm .email-input input:hover {
+    background-color: rgba(66, 16, 16, 0.589);
+    border: 2px solid white;
+  }
+  
+  .ForgotForm button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(68, 0, 255, 0.747);
+    color: white;
+    cursor: pointer;
+  }
+  
+  .ForgotForm button:hover {
+    background-color: rgba(68, 0, 255, 1);
+  }
+  
+  .ForgotForm button:disabled {
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: not-allowed;
+  }
+  
+  .ForgotForm .error-message {
+    color: red;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .ForgotForm .message {
+    color: skyblue;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
