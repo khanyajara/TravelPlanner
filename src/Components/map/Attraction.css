@@ -90,6 +90,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .Card-container{
@@ -116,5 +117,5 @@
     border: 2px solid white;
     transform: scale(1.05); 
     transition: all 0.3s ease;
-    
+
 }

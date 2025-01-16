@@ -21,6 +21,7 @@ const Register = () => {
     try {
       const response = await axios.post('https://climateroutebackend.onrender.com/api/register', { email, password, username });
       setMessage(response.data.message);
+      navigate('/login')
       setError('');
     } catch (error) {
       setError(error.response?.data?.message || 'Error registering user');
@@ -33,46 +34,51 @@ const Register = () => {
 
   return (
     <div className="RegisterForm">
-      <h2>Register</h2>
-      {error && <div style={{ color: 'red' }}>{error}</div>}
-      {message && <div style={{ color: 'green' }}>{message}</div>}
-      <form onSubmit={handleSubmit} className="form-container">
-        <div className="input-container">
-          
-          <input
-          placeholder='Email'
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            className='Input'
-          />
+      <div className='Login-container'>
+        <div className='Picture-container'><h1>ClimeQuest</h1></div>
+        <div className='login'>
+          <h2>Register</h2>
+          {error && <div style={{ color: 'red' }}>{error}</div>}
+          {message && <div style={{ color: 'green' }}>{message}</div>}
+          <form onSubmit={handleSubmit} className="form-container">
+            <div className="input-container">
+        
+              <input
+              placeholder='Email'
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                className='Input'
+              />
+            </div>
+            <div className="input-container">
+        
+              <input
+                type="password"
+                placeholder='Password'
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+                className='Input'
+              />
+            </div>
+            <div className="input-container">
+        
+              <input
+                type="text"
+                placeholder='UserName'
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                required
+                className='Input'
+              />
+            </div>
+            <button type="submit">Register</button>
+          </form>
+          <p className='Account-link' onClick={toLogin}>Already have an account?</p>
         </div>
-        <div className="input-container">
-          
-          <input
-            type="password"
-            placeholder='Password'
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-            className='Input'
-          />
-        </div>
-        <div className="input-container">
-         
-          <input
-            type="text"
-            placeholder='UserName'
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            required
-            className='Input'
-          />
-        </div>
-        <button type="submit">Register</button>
-      </form>
-      <p className='Account-link' onClick={toLogin}>Already have an account?</p>
+      </div>
     </div>
   );
 };

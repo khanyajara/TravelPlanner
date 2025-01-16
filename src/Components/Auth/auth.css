@@ -1,19 +1,19 @@
-*{
-    
-}
+
 
 .RegisterForm{
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;   
-margin-top: 200px;
-border-radius: 13px;
- border: 3px solid black;
- width: 700px;
- margin-left: 600px;
- height: 50vh;
- background-color: rgba(150, 8, 79, 0.295);
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    border-radius: 13px;
+    border: 3px solid black;
+    width: 1200px;
+    margin-left: 350px;
+    height: 80vh;
+    z-index:-5 ;
+   background-color: #413497e5;
+    padding: 20px
 
 }
 
@@ -56,23 +56,54 @@ border-radius: 13px;
     border: 2px solid white;
     
 }
-
-* {
-    
-  }
+/* .Picture-container {
+  background-image: url('C:/Users/khany/OneDrive/Desktop/my projects/Group-Projects/frontend/src/assess/images/09df30f765d088be030da204f2e7ec32.gif');
+  background-size: center;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  top: 0;
+  left: 0;
   
+} */
+
+
+.Picture-container {
+ 
+  background-image: url('../../assess/images/0x0.webp');
+ 
+  background-size: cover;
+  background-position: center;
+  width: 700px;
+  height: 70vh;
+  border-radius: 5px;
+  opacity: 0.6;
+  margin: 2rem; 
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.Picture-container h1{
+  font-size: 40px;
+}
+
   .LoginForm {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 100px;
     border-radius: 13px;
     border: 3px solid black;
-    width: 700px;
-    margin-left: 600px;
-    height: 50vh;
-    background-color: rgba(150, 8, 79, 0.295);
+    width: 1200px;
+    margin-left: 350px;
+    height: 80vh;
+    z-index:-5 ;
+   background-color: #413497e5;
     padding: 20px;
   }
   
@@ -80,6 +111,18 @@ border-radius: 13px;
     margin-bottom: 20px;
     font-size: 24px;
     color: white;
+  }
+
+  .Login-container{
+    display: flex;
+  }
+
+  .login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
   }
   
   .form-container {
