@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import css from './Attraction.css'
+import AttractionLike from './likedAttraction';
 
 
 
@@ -77,6 +78,8 @@ const AttractionsList = ({ city, radius = 5000 }) => {
                             <p> 📍{attraction.address}</p>
                             <p>Location: {attraction.location.lat}, {attraction.location.lng}</p>
                             <p>Types: {attraction.types.join(', ')}</p>
+                            <AttractionLike attraction={attraction} />
+
                         </div>
                     ))
                 ) : (
