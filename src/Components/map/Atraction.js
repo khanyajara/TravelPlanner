@@ -70,7 +70,7 @@ const AttractionsPage = () => {
                     <p>Rating: {attraction.rating || "N/A"} (Based on {attraction.user_ratings_total} ratings)</p>
                     <p>Location: {attraction.vicinity}</p>
                     <p>{attraction.icon}</p>
-                    <p>Types:{attraction.types}</p>
+                    
                     {attraction.photos && attraction.photos.length > 0 && (
                       <img
                         src={`https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${attraction.photos[0].photo_reference}&key=REACT_APP_GOOGLE_MAPS_API_KEY`}
