@@ -1,9 +1,9 @@
 body {
     
-    background-size: cover;
+    background-size: center;
     background-position: inherit;
-    background: linear-gradient(45deg, #6f8cdd, #3C2A48); 
-    height: auto;
+    background: linear-gradient(30deg,#e256d6, #542450, #643e96);
+    height: 100%;
     display: flex;
     flex-direction: column;
   }

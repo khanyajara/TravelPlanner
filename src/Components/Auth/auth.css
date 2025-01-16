@@ -12,7 +12,7 @@
     margin-left: 350px;
     height: 80vh;
     z-index:-5 ;
-   background-color: #413497e5;
+    background: linear-gradient(30deg,#a23cc9, #5d296d, #a387e2);
     padding: 20px
 
 }
@@ -87,8 +87,10 @@
   
 }
 
-.Picture-container h1{
-  font-size: 40px;
+.Picture-container:hover {
+  transform: scale(1.05); 
+  transition: all 0.3s ease;
+  
 }
 
   .LoginForm {
@@ -103,7 +105,7 @@
     margin-left: 350px;
     height: 80vh;
     z-index:-5 ;
-   background-color: #413497e5;
+    background: linear-gradient(30deg,#a23cc9, #5d296d, #a387e2);
     padding: 20px;
   }
   
@@ -325,7 +327,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-    background-color: rgba(150, 8, 79, 0.295);
+    background: linear-gradient(30deg,#e256d6, #542450, #643e96);
     opacity: 0;
     transition: opacity 0.5s;
   }

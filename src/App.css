@@ -3,11 +3,14 @@ body {
   
 
   
-  height: auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
-
+  
+.App{
+  height: 849px;
+}
 
 
 .map-weather-container {
