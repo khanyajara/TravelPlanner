@@ -45,6 +45,7 @@ const AttractionsList = ({ city, radius = 5000 }) => {
                     setWeather(response.data.weather);
                     setSuggestions(response.data.suggestions);
                     setLoading(false);
+                    
                 } catch (error) {
                     setLoading(false);
                     setError(error.response?.data?.message || 'Something went wrong');
@@ -61,7 +62,7 @@ const AttractionsList = ({ city, radius = 5000 }) => {
     }
     return (
         <div className='HomePage-Attractions'>
-            <h2>Weather Suggestions:</h2>
+            <h2>Activity Suggestions:</h2>
             < div>
                 {suggestions.map((suggestion, index) => (
                     <p key={index}>{suggestion}</p>
