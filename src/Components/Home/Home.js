@@ -82,7 +82,7 @@ function App() {
       </div>
       
 
-      <CityAttractions/>
+      
      
      
 
@@ -91,11 +91,13 @@ function App() {
       <div className="weather-section">
         <div className="weather-container">
           <WeatherCard coordinates={coordinates} />
+
+
         </div>
         <div>
           <Forecast coordinates={coordinates} />
         </div>
-      </div>
+      </div><CityAttractions/>
     </div>
   );
 }
